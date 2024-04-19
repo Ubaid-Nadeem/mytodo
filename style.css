@@ -1,0 +1,120 @@
+.main-font {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: ; */
+    font-style: normal;
+}
+
+.main-heading {
+    font-size: 40px;
+}
+
+.content {
+    margin-top: 150px;
+}
+
+.content {
+    display: none;
+}
+
+.todo-container {
+    /* display: none; */
+}
+
+.input-div {
+    /* background-color: aqua; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-div input {
+    width: 300px !important;
+}
+
+.input-div button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: brown;
+    color: aliceblue;
+    border: none;
+}
+
+.todo-item ul {
+    width: 360px;
+    margin: auto;
+}
+
+.todo-item ul li {
+    background-color: rgb(186, 201, 248);
+    color: black;
+    margin-top: 10px;
+    padding: 10px;
+
+}
+
+.todo-item ul li p {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    /* background-color: aqua; */
+    display: inline-block;
+}
+
+.delete {
+    margin-left: 10px;
+    display: none;
+}
+
+.todo-item ul li:hover .delete {
+    display: inline;
+    cursor: pointer;
+}
+
+.todo-item ul li:hover {
+    background-color: rgb(71, 141, 141);
+    padding: 8px;
+    color: white;
+    font-weight: bold !important;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li p {
+    width: fit-content !important;
+    /* background-color: aqua; */
+
+}
+
+ul li span {
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+.delete_all {
+    /* background-color: aqua; */
+    width: 340px;
+    text-align: right;
+    color: rgb(182, 6, 6);
+    margin-top: 10px !important;
+    margin: auto;
+    display: none;
+}
+.delete_all:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 425px) {
+
+    .main-heading {
+        font-size: 30px;
+    }
+}

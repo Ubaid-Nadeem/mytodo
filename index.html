@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- nav bar  -->
+
+    <nav>
+        <div class="nav-wrapper container">
+            <h5 style="margin: 0; padding: 0; display: inline;" class="main-font">myTodos</h5>
+
+            <div class="right" id="user_info">
+                <span><i class="fa-solid fa-user" style="font-size: 15px; margin-right: 5px;"></i>
+                    <a class="dropdown-trigger main-font " href="#" data-target="dropdown1" id="user_name"></a>
+                </span>
+                <a href="#" style="margin-left: 15px;" onclick="Delete()"> Log out <i class="fa-solid fa-power-off"
+                        style="font-size: 15px;"></i></a>
+            </div>
+
+
+        </div>
+    </nav>
+
+
+    <!-- user name  -->
+
+    <div class="content container" id="content_view">
+
+        <h2 style="text-align: center;" class="main-font main-heading">Welcome to myTodos</h2>
+
+
+        <div class="row ">
+            <div class="row ">
+                <div style="width: 320px; margin: auto;">
+                    <div class="input-field col s6 "
+                        style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                        <input id="name" type="text" class="validate">
+                        <label for="last_name">Enter You Name</label>
+                        <a style="margin-left: 10px; width: 100px;" class="waves-effect waves-light btn"
+                            onclick="getName()">Enter</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- todo -->
+
+    <div class="todo-container" id="todo-view">
+        <div class="input-div">
+            <input type="text" placeholder="Enter a item" id="todo_value"> <button onclick="getTodoValue()">Add</button>
+        </div>
+
+
+        <div class="todo-item">
+            <ul id="todo_ul">
+
+            </ul>
+            <p class="delete_all" id="delete_all" onclick="deleteAll()">Delete All</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
