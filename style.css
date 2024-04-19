@@ -17,9 +17,6 @@
     display: none;
 }
 
-.todo-container {
-    /* display: none; */
-}
 
 .input-div {
     /* background-color: aqua; */
@@ -30,7 +27,7 @@
 }
 
 .input-div input {
-    width: 300px !important;
+    width: 250px !important;
 }
 
 .input-div button {
@@ -42,7 +39,7 @@
 }
 
 .todo-item ul {
-    width: 360px;
+    width: 320px;
     margin: auto;
 }
 
@@ -98,7 +95,7 @@ ul li span {
 
 .delete_all {
     /* background-color: aqua; */
-    width: 340px;
+    width: 300px;
     text-align: right;
     color: rgb(182, 6, 6);
     margin-top: 10px !important;
@@ -109,7 +106,18 @@ ul li span {
     text-decoration: underline;
     cursor: pointer;
 }
+footer{
+    font-size: 12px !important;
+    width: 100%;
+    color: rgb(177, 174, 174);
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(240, 240, 240);
+}
+footer p{
+    text-align: center;
 
+}
 
 
 @media screen and (max-width: 425px) {
